@@ -14,6 +14,7 @@ public class WorkMatrix {
 
 	public void setMatrix(int[][] matrix) {
 		this.matrix = matrix;
+		int max;
 	}
 	public int SumaMatrix(){
 		int s = 0;
@@ -23,4 +24,8 @@ public class WorkMatrix {
 			}
 		}
 		return s;
+	
+	
 	}
+	
+}
