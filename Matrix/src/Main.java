@@ -26,13 +26,20 @@ public class Main {
 			writer.print(workSquare.AfisImpare(matrix)[i] + " ");
 		}
 		
+		writer.println("Numarul elementelor impare -"+ workSquare.CateImpare());
+		
+		writer.print("Numerele pare sunt:");
 		for (int i = 0; i < workSquare.AfisPare(matrix).length; i++) 
 		{
 			writer.print(workSquare.AfisPare(matrix)[i] + " ");
 		}
 		
+		writer.println("Numarul elementelor pare -"+ workSquare.CatePare());
+		
+		
+		
 		writer.println();
-		writer.println("ok");
+		writer.println("gata");
 		writer.close();
 	}
 	

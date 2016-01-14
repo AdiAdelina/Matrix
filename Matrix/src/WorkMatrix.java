@@ -64,15 +64,31 @@ public class WorkMatrix {
 	public int[] AfisImpare(int[][] matrix) // afiseaza elementele impare
 	{
 		int[] temp = new int[0];
-		for (int i = 0; i < matrix.length; i++) {
+		for (int i = 0; i < matrix.length; i++)
+		{
 			for (int j = 0; j < matrix.length; j++) {
-				if (matrix[i][j] % 2 != 0) {
+				if (matrix[i][j] % 2 != 0)
+				{
 					temp = addElement(temp, matrix[i][j]);
+
 				}
 			}
 		}
 		return temp;
 	}
+	
+	public int CateImpare ()
+	{ int  nr=0;
+	for (int i = 0; i < matrix.length; i++) 
+	{
+		for (int j = 0; j < matrix.length; j++)
+		{ if (matrix[i][j]%2==0)
+			nr=nr+1;
+		}
+	}
+	return nr;
+	} 
+
 	
 	public int [] AfisPare (int[][]matrix) // afis elem pare
 	{ int [] par= new int [0];
@@ -80,16 +96,42 @@ public class WorkMatrix {
 		for (int j=0; j<matrix.length; j++) {
 			if (matrix[i][j]%2==0)
 			{ par=addElement (par, matrix [i][j]);
+			
 			}
 		}
 	}
 	return par;
+	} 
+	
+	
+	public int CatePare ()
+	{ int nr1=0;
+	for (int i = 0; i < matrix.length; i++) 
+	{
+		for (int j = 0; j < matrix.length; j++)
+		{ if (matrix[i][j]%2!=0)
+			nr1=nr1+1;
+		}
+	
 	}
+	return nr1;
+	}
+	
+	
+	
+		
+	
+	
 	
 	
 	
 	
 }
+	
+	
+	
+	
+
 	
 	
 	
