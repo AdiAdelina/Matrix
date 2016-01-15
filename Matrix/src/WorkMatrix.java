@@ -82,7 +82,7 @@ public class WorkMatrix {
 	for (int i = 0; i < matrix.length; i++) 
 	{
 		for (int j = 0; j < matrix.length; j++)
-		{ if (matrix[i][j]%2==0)
+		{ if (matrix[i][j]%2!=0)
 			nr=nr+1;
 		}
 	}
@@ -109,7 +109,7 @@ public class WorkMatrix {
 	for (int i = 0; i < matrix.length; i++) 
 	{
 		for (int j = 0; j < matrix.length; j++)
-		{ if (matrix[i][j]%2!=0)
+		{ if (matrix[i][j]%2==0)
 			nr1=nr1+1;
 		}
 	
@@ -118,13 +118,61 @@ public class WorkMatrix {
 	}
 	
 	
+/*	public int AfisPalindrom (int[][]matrix) //Afis nr palindrom  // Are ceva asta!!!!
+	{int [] palindrom =new int [0];
+	int ni=0, y;
+	
+	for (int i=0;i<matrix.length;i++)
+	{
+		for (int j=0; j<matrix.length; j++)
+		{ y=matrix [i][j];
+		while (matrix [i][j]!=0)
+			{ni=ni*10+matrix[i][j]%10;
+		matrix [i][j]=matrix[i][j]/10;}
+		if (ni==y)
+			palindrom=addElement (palindrom, matrix [i][j]);
+		}
+		
+			
+		
+		}
+	return palindrom; 
+	}
+	*/
+	
+	
+	public int SumaImpare ()
+	{ int  s=0;
+	for (int i = 0; i < matrix.length; i++) 
+	{
+		for (int j = 0; j < matrix.length; j++)
+		{ if (matrix[i][j]%2!=0)
+			s=s+matrix [i][j];
+		}
+	}
+	return s;
+	} 
+	
+
+
+	public int SumaPare ()
+	{ int  s=0;
+	for (int i = 0; i < matrix.length; i++) 
+	{
+		for (int j = 0; j < matrix.length; j++)
+		{ if (matrix[i][j]%2==0)
+			s=s+matrix [i][j];
+		}
+	}
+	return s;
+	} 
+	
+	
+	
+	//Matrice patratica
+	
 	
 		
-	
-	
-	
-	
-	
 	
 }
 	
