@@ -25,6 +25,16 @@ Sume:
 Suma matrice= 3321
 Suma elementelor impare este = 1681
 Suma elementelor pare este = 1640
+
+
 Matricea este patratica
+
+Suma elementelor de pe diagonala principala = 369
+
+Suma elementelor de pe diagonala secundara = 369
+
+Suma elementelor de deasupra diagonalei principale = 1746
+
+Suma elementelor de deasupra diagonalei secundare = 1479
 
 gata

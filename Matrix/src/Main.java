@@ -57,13 +57,19 @@ public class Main {
 		writer.println();
 		
 		
-		
-		
-		
-		
-		
-		
+		writer.println("Suma elementelor de pe diagonala principala = "+workSquare.SumaDiagPrinc()); 
 		writer.println();
+		
+		writer.println("Suma elementelor de pe diagonala secundara = "+workSquare.SumaDiagPrinc()); 
+		writer.println();
+		
+		writer.println("Suma elementelor de deasupra diagonalei principale = "+workSquare.SumaDeasupraDiagPrinc()); 
+		writer.println();
+		writer.println("Suma elementelor de deasupra diagonalei secundare = "+workSquare.SumaDeasupraDiagSec()); 
+		writer.println();
+		/*writer.println("Ambele diagonale au suma = "+workSquare.EgalitateSumaDiagonale()); */
+		
+
 		writer.println("gata");
 		writer.close();
 	}

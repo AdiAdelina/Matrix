@@ -171,8 +171,54 @@ public class WorkMatrix {
 	
 	//Matrice patratica
 	
-	
+	public int SumaDiagPrinc ()
+	{ int s=0;
+	for (int i = 0; i < matrix.length; i++) 
+	{
+		for (int j = 0; j < matrix.length; j++)
+			if (i==j)
+				s=s+matrix [i][j];}
+	return s;
+	}
 		
+	public int SumaDiagSec ()
+	{ int s=0;
+	for (int i = 0; i < matrix.length; i++) 
+	{
+		for (int j = 0; j < matrix.length; j++)
+			if (i+j==matrix.length+1)
+				s=s+matrix [i][j];}
+	return s;
+	}
+	
+	public int SumaDeasupraDiagPrinc ()
+	{ int s=0;
+	for (int i = 0; i < matrix.length-1; i++) 
+	{
+		for (int j = i+1; j < matrix.length; j++)
+			s=s+matrix [i][j];}
+			
+				
+	return s;
+	}
+	
+	public int SumaDeasupraDiagSec ()
+	{ int s=0;
+	for (int i = 0; i < matrix.length-1; i++) 
+	{
+		for (int j = 1; j < matrix.length-i; j++)
+			s=s+matrix [i][j];}
+			
+				
+	return s;
+	}
+	
+/*	public int EgalitateSumaDiagonale ()
+	{ int s;
+	if (SumaDiagPrinc()==SumaDiagSec())
+		return s;
+		
+	}*/
 	
 }
 	
